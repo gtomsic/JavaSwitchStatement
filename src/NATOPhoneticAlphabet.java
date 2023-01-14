@@ -1,7 +1,7 @@
 public class NATOPhoneticAlphabet {
     public static void main(String[] args) {
         String word = "H";
-        System.out.println(word + " is for (" + alphabet(word) + ")");
+        System.out.println(word + " is " + alphabet(word));
     }
     public static String alphabet(String word){
         return switch (word) {
@@ -31,7 +31,9 @@ public class NATOPhoneticAlphabet {
             case "X" -> "X-ray";
             case "Y" -> "Yoke";
             case "Z" -> "Zebra";
-            default -> "Not found";
+            default -> {
+                yield "Letter " + word + " not found in switch";
+            }
         };
     }
 }
