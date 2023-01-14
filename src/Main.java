@@ -12,7 +12,7 @@ public class Main {
             default -> System.out.println("No match found.");
         }
 
-        String month = "XYZ";
+        String month = "MARCH";
         System.out.println(month + " is in the " + getQuarter(month) + " quarter");
     }
 
